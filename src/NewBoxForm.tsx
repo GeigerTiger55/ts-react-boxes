@@ -22,6 +22,7 @@ interface NewBoxFormProps {
   createBox: Function
 }
 
+/** Creates form. */
 function NewBoxForm( { createBox } : NewBoxFormProps ) {
   const [formData, setFormData] = useState<BoxI >({
     height: "",

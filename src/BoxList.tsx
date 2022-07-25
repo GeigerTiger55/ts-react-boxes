@@ -6,6 +6,10 @@ import NewBoxForm from "./NewBoxForm";
  *
  * State:
  * - boxes: [ { id, width, height, backgroundColor }, ... ]
+ *
+ * Props:
+ * - None
+ *
  */
 
  interface BoxI {

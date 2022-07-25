@@ -1,5 +1,7 @@
 /** Colored box presentation
  *
+ * State: None
+ *
  * Props:
  * - id (unique)
  * - width
@@ -10,7 +12,6 @@
  * BoxList -> Box
  */
 
-
  interface BoxPropsI {
   id: string;
   height: number;
@@ -18,7 +19,6 @@
   backgroundColor: string;
   remove: Function;
 }
-
 
 function Box({ id, width = 5, height = 5, backgroundColor, remove }: BoxPropsI ) {
 
