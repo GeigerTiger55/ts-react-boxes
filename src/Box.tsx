@@ -1,3 +1,4 @@
+
 /** Colored box presentation
  *
  * State: None
@@ -12,6 +13,8 @@
  * BoxList -> Box
  */
 
+import { JsxAttribute } from "typescript";
+
  interface BoxPropsI {
   id: string;
   height: number;
@@ -20,7 +23,13 @@
   remove: Function;
 }
 
-function Box({ id, width = 5, height = 5, backgroundColor, remove }: BoxPropsI ) {
+function Box({ 
+    id, 
+    width = 5, 
+    height = 5, 
+    backgroundColor, 
+    remove 
+}: BoxPropsI ) {
 
   /** Remove a box. */
   function handleRemove() {
